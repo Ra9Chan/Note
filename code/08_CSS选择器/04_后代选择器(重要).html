@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 后代选择器一： 所有的后代（直接或间接的后代） */
+    .home span{
+      color: coral;
+    }
+
+    /* 后代选择器二： 直接子代( > ) */
+    .home>span{
+      color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <span>2312312312312</span>
+    <div class="box">
+      <span>我是span</span>
+      <span>我是span</span>
+      <span>我是span</span>
+      <span>我是span</span>
+    </div>
+  
+    <div class="content">
+      <div class="desc">
+        <p>
+          <span>我是Span2</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

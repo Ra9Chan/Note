@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 建议的编写顺序是 :link、:visited、:focus、:hover、:active */
+    /* a元素链接从未访问 */
+    a:link{
+      color: red;
+    }
+    /* a元素链接已被访问 */
+    a:visited{
+      color: green;
+    }
+    /* 拥有输入焦点的元素(键盘输入Tab) */
+    a:focus{
+      color: darkviolet;
+    }
+    /* 鼠标停留在a元素链接上(重要) */
+    a:hover{
+      color: blue;
+    }
+    /* 激活的链接(鼠标按住未松开) */
+    a:active{
+      color: pink;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <a href="http://www.stackoverflow.com">stackoverflow</a>
+  <a class="website"
+  href="http://www.baidu.com">Baidu</a>
+</body>
+</body>
+</html>

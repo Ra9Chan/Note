@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 常见伪元素 */
+    
+    /* ::before */
+    .item::before{
+      content: url(../image/Hot.png);
+      width: 5px;
+    }
+    /* ::after */
+    .item::after{
+      content: 'end!!!';
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box item">我是DIV元素</div>
+  <div class="box1">我是DIV元素</div>
+  <div class="box2 item">我是DIV元素</div>
+  <div class="box3">我是DIV元素</div>
+  <div class="box4">我是DIV元素</div>
+  <div class="box5 item">我是DIV元素</div>
+  <div class="box6">我是DIV元素</div>
+</body>
+</html>
