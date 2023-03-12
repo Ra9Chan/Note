@@ -1,0 +1,71 @@
+{
+    "created_time": "2023-03-11T08:28:04Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "38",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "01_CSS继承-默认继承.html",
+            "signature": "112955023440788",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "39",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "02_CSS继承-继承计算值.html",
+            "signature": "73166446410644",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "40",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "03_CSS继承-强制继承.html",
+            "signature": "42496084949908",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "41",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "04_CSS层叠.html",
+            "signature": "123280124820372",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "42",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "05_CSS层叠-权重的比较.html",
+            "signature": "102269144808340",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "43",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "06_HTML元素类型比较.html",
+            "signature": "134528644168596",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+    ],
+    "id": "37",
+    "modified_time": "2023-03-11T08:28:04Z",
+    "signature": "110240604109716",
+    "version": 3
+}

@@ -1,0 +1,26 @@
+{
+    "created_time": "2023-03-11T08:28:04Z",
+    "files": [
+    ],
+    "folders": [
+        {
+            "name": "06_CSS文本属性"
+        },
+        {
+            "name": "07_CSS字体属性"
+        },
+        {
+            "name": "08_CSS选择器"
+        },
+        {
+            "name": "09_CSS继承层叠类型"
+        },
+        {
+            "name": "image"
+        }
+    ],
+    "id": "2",
+    "modified_time": "2023-03-11T08:28:04Z",
+    "signature": "79316839578516",
+    "version": 3
+}

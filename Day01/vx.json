@@ -1,0 +1,41 @@
+{
+    "created_time": "2023-03-11T08:28:04Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "46",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "day01 作业布置.md",
+            "signature": "20033405991828",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "47",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "day01-作业-参考.md",
+            "signature": "65031778352020",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2023-03-11T08:28:04Z",
+            "id": "48",
+            "modified_time": "2023-03-11T08:28:04Z",
+            "name": "内容回顾.md",
+            "signature": "33120171342740",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+    ],
+    "id": "45",
+    "modified_time": "2023-03-11T08:28:04Z",
+    "signature": "75906635545492",
+    "version": 3
+}
