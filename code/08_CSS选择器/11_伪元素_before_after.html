@@ -14,9 +14,13 @@
       width: 5px;
     }
     /* ::after */
+    /* ::after是一个行内级元素 */
     .item::after{
-      content: 'end!!!';
-      font-size: 20px;
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #f00;
+      display: inline-block;
     }
   </style>
 </head>
