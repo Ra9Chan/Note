@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      box-sizing: border-box;
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+      background-color: blue;
+      /* 第一种 元素存在,不显示,不占位置,相当于元素并不存在*/
+      /* display: none; */
+      /* 第二种 元素存在,设置能见度隐藏,占有原先位置*/
+      /* visibility: hidden; */
+      /* 第三种 可选择内容,占有原有位置*/
+      /* color: rgba(255, 0, 0, 0);
+      background-color: rgba(255, 0, 0, 0); */
+      /* 第四种 */
+      opacity: 0;
+}
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+      <div>
+          <p>
+              Word Light <span>and Dark</span>
+          </p>
+      </div>
+  </div>
+  <div>
+    <div>
+        <p>
+            Word Light <span>and Dark</span>
+        </p>
+    </div>
+</div>
+</body>
+</html>
