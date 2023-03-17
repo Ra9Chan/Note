@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 左右不影响排布，上下会改变文本的观感 -->
+  <style>
+    .content{
+      color: white;
+      background-color: red;
+      /* 内容 height width不生效 */
+      height: 100px;
+      width: 100px;
+      /* 内边距 padding 特殊 能把盒子上下撑大，但是不占空间*/
+      /* padding: 50px; */
+      /* 边框 border 特殊 能把盒子上下撑大，但是不占空间 */
+      /* border: 50px solid #00f; */
+      /* 外边距 margin 特殊 上下margin不生效*/
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+  <span class="content">
+    我是span内容
+  </span>
+  aaaaa
+  <div>021341</div>
+</body>
+</html>

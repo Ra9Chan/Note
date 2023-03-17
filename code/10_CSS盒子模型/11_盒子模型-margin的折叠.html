@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>collapse</title>
+  <!-- 水平方向的margin永远不会折叠，上下margin有可能会合并为一个margin，取两者之间的最大值 -->
+  <style>
+    .box1{
+      height: 100px;
+      background-color: #f00;
+      margin-bottom: 30px;
+    }
+    .box2{
+      height: 100px;
+      background-color: #0f0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>
