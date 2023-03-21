@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <!-- 
+    1. 先完成结构
+    2. 重置样式(body/a/ul)
+    3. 先整体后局部
+      最好按照结构顺序
+    4. 去除重复代码
+      将重复的逻辑放到一个单独的class中
+      不同的代码抽到不同的class
+   -->
+   <style>
+    ul > li {
+      margin: 8px 0;
+      /* width: 300px; */
+    }
+    ul > li > a{
+      display: inline;
+    }
+    ul > li > a:hover{
+      color: #f00;
+    }
+    
+    ul > li .ranking, .content, .icon{
+      margin: 0 2px;
+    }
+    ul > li .ranking{
+      font-size: 18px;
+      font-weight: 700;
+      color: #829;
+    }
+    ul > li:nth-child(1) .ranking{
+      color: #888;
+    }
+    ul > li:nth-child(2) .ranking{
+      color: #0f2;
+    }
+    ul > li:nth-child(3) .ranking{
+      color: #80c;
+    }
+
+    ul > li .content{
+      display: inline;
+      font-size: 16px;
+      line-height: 20px;
+      /* width: 300px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; */
+    }
+    ul > li .icon{
+      position: relative;
+      top: 2px;
+      left: 4px;
+      display: inline-block; 
+      width: 16px;
+      height: 16px;
+    }
+    ul > li .hot{
+      background-image: url(../image/hot-icon.svg);
+    }
+    ul > li .new{
+      background-image: url(../image/new-icon.svg);
+    }
+   </style>
+</head>
+<body>
+  <ul>
+    <li class="item">
+      <a  href="https://www.toutiao.com/article/7212718781938958888/">
+        <span class="ranking">1</span>
+        <p class="content">
+          习近平会见俄罗斯总统普京
+        </p>
+      </a>
+      <i class="icon hot">
+      </i>
+    </li>
+    <li class="item">
+      <a  href="https://www.toutiao.com/article/7212718781938958888/">
+        <span class="ranking">2</span>
+        <p class="content">
+          山东舰出动！美菲军演向黄岩岛海域开火，中国海军航母或前出应对
+        </p>
+      </a>
+      <i class="icon new">
+      </i>
+    </li>
+    <li class="item">
+      <a  href="https://www.toutiao.com/article/7212718781938958888/">
+        <span class="ranking">3</span>
+        <div class="content">
+          今年首轮大范围强对流天气来袭 将影响哪些地区？专家解读
+        </div>
+      </a>
+      <i class="icon new">
+      </i>
+      <i class="icon hot"></i>
+    </li>
+  </ul>
+</body>
+</html>
