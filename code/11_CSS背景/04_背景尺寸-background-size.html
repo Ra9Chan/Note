@@ -5,21 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/reset.css">
   <style>
-    .container{
+    .box{
       height: 2000px;
-      background-image: url(../image/wzry.jpg);
+      background-color: #f00;
+      /* 如果设置了多张图片， 第一张会显示在最上面，其他依次层叠在下面 */
+      background-image: url(../image/micmp.jpg), url(../image/wzry.jpg);
       background-repeat: no-repeat;
-      /* background-size: 300px; */
-      /* background-position: -30px 99px; */
-      background-attachment: fixed;
+      background-size: contain;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-
-  </div>
+  <div class="box"></div>
 </body>
 </html>
