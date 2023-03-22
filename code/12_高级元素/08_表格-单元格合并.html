@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+      border-collapse: collapse;
+    }
+    table caption{
+      font-weight: 700;
+      font-size: 30px;
+      margin: 30px 0 ;
+
+    }
+    th, td{
+      border: 1px solid #333;
+    }
+    thead tr th {
+      padding: 4px 20px;
+    }
+    tbody tr td{
+      padding: 4px 16px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>高一后墙宣传栏</caption>
+    <thead>
+      <tr>
+        <th colspan="4">第一周常规检查</th><!--跨列合并: 使用colspan,并且省略掉合并的td;-->
+
+        <th rowspan="2">通知通告</th>
+        <th rowspan="2">光荣榜</th>
+        <th rowspan="2">美术作品展览</th>
+      </tr>
+      <tr>
+        <th>班级</th>
+        <th>出勤</th>
+        <th>纪律</th>
+        <th>卫生</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>高一1班</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="5"></td><!--跨行合并: 使用rowspan,并且省略掉后面tr中的td;-->
+        <td rowspan="5"></td>
+        <td rowspan="5"></td>
+      </tr>
+      <tr>
+        <td>高一2班</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>高一3班</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>高一4班</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>高一5班</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

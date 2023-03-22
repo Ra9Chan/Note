@@ -1,0 +1,46 @@
+table{
+  text-align: center;
+  border-spacing: 0;
+}
+th, td{
+  padding: 10px 50px;
+}
+caption{
+  font-weight: 700;
+  padding: 20px 0 ;
+  font-size: 25px;
+
+}
+
+table thead tr td,
+table tr:nth-child(even){
+  background-color: #f5f5f5;
+}
+
+table tr:nth-child(odd){
+  background-color: #f3ecec;
+}
+
+table tr .starttime{
+  font-weight: 700;
+}
+table tr .closetime{
+  font-size: 5px;
+  color: #999;
+}
+table tr .price{
+  font-weight: 700;
+  color: #f33;
+}
+table tr .button{
+  width: 70px;
+  height: 25px;
+  background-color: #f00;
+  border: 1px solid #f00;
+  border-radius: 8px;
+}
+table tr .button .btncontent{
+  font-size: 13px;
+  color: #eee;
+  line-height: 25px;
+}

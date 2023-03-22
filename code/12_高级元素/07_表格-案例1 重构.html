@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, tr, th, td{
+      margin: 0;
+      padding: 0;
+    }
+    caption{
+      font-size: 30px;
+      font-weight: 700;
+      color: #a83;
+    }
+    table{
+      text-align: center;
+      /* 边框折叠 */
+      border-collapse: collapse;
+    }
+    table tbody tr:nth-child(3){
+      font-weight: 700;
+      color: #f33;
+    }
+    th,td{
+      border: 1px solid #333;
+      padding: 8px 16px;
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <table>
+    <caption>股票行情</caption><!-- 新增语义化, 用于表格标题-->
+    <thead><!-- 新增语义化, 用于表格头部-->
+      <tr>
+        <th>排名</th><!-- 新增th, 用于表格内第一行标题-->
+        <th>股票名称</th>
+        <th>股票代码</th>
+        <th>股票价格</th>
+        <th>股票涨势</th>
+      </tr>
+    </thead>
+    <tbody><!-- 新增语义化, 用于表格主体部分-->
+      <tr>
+        <td>1</td>
+        <td>贵州茅台</td>
+        <td>600519</td>
+        <td>1800</td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>腾讯控股</td>
+        <td>00700</td>
+        <td>400</td>
+        <td>3%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>五粮液</td>
+        <td>000858</td>
+        <td>1600</td>
+        <td>8%</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>东方财富</td>
+        <td>300059</td>
+        <td>25</td>
+        <td>4%</td>
+      </tr>
+    </tbody>
+    <tfoot><!-- 新增语义化, 用于表格页脚-->
+      <tr>
+        <td>总计</td>
+        <td></td>
+        <td></td>
+        <td>9830</td>
+        <td>37%</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
