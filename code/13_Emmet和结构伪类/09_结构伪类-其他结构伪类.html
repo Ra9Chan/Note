@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root{
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+      }
+      :empty{
+        width: 100px;
+        padding: 100px;
+        background-color: #f00;
+      }
+      .box only-child {
+        font-size: 30px;
+        color: red;
+      }
+      .box :only-of-type {
+        color: purple;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>我是box的div</div>
+      <span>我是span元素</span>
+    </div>
+    <div class="box">
+      <div>我是box的div</div>
+      <div>我是box的div</div>
+      <div></div>
+    </div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </body>
+</html>
