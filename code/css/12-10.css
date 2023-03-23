@@ -21,14 +21,14 @@ table tr:nth-child(odd){
   background-color: #f3ecec;
 }
 
-table tr .starttime{
+table tr td p:first-child{
   font-weight: 700;
 }
-table tr .closetime{
-  font-size: 5px;
+table tr td p:nth-child(2){
+  font-size: 10px;
   color: #999;
 }
-table tr .price{
+tbody tr td:nth-child(4){
   font-weight: 700;
   color: #f33;
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- form提交 1.服务器地址（域名） 2. -->
+  
+  <form action="login.php" method="post">
+    <div>
+      <label for="username">
+        username: <input type="text" id="username" name="username">
+      </label>
+    </div>
+    <div>
+      <label for="password" >password: </label>
+      <input type="password" id="password" name="password">
+    </div>
+    <div>
+      <label for="basketball"><input type="checkbox" name="habit" id="basketball" value="basketball">篮球</label>
+      <!-- checked默认选中 -->
+      <label for="football"><input type="checkbox" name="habit" id="football" value="football" checked>足球</label>
+    </div>
+    <div>
+      <label for="man"><input type="radio" name="sex" id="male" value="male">男</label>
+    <label for="female"><input type="radio" name="sex" id="female" value="female">女</label>
+    </div>
+    <button type="submit">提交按钮</button>
+    <button type="reset">重置按钮</button>
+
+  </form>
+</body>
+</html>

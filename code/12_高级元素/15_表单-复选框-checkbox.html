@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- name作为key 绑定 -->
+    <!-- value作为值 进行传递 -->
+    <!-- 如果两个input name相同，那么两个input会排斥 -->
+    <form action="">
+      <label for="basketball"
+        ><input
+          type="checkbox"
+          name="habit"
+          id="basketball"
+          value="basketball"
+        />篮球</label
+      >
+      <!-- checked默认选中 -->
+      <label for="football"
+        ><input
+          type="checkbox"
+          name="habit"
+          id="football"
+          value="football"
+          checked
+        />足球</label
+      >
+      <button type="submit">提交按钮</button>
+    </form>
+  </body>
+</html>
