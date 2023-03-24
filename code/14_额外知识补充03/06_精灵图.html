@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS sprite</title>
+    <!-- 精灵图/雪碧图 -->
+    <!-- 减少网页的 Http请求数量， 加快网页响应速度， 减轻服务器压力-->
+    <!-- 减小图片总大小 -->
+    <!-- 解决了图片命名的困扰，只需要针对一张集合的图片命名 -->
+    <style>
+      body {
+        background-color: #000;
+      }
+      .logo {
+        background: url('../image/13_/topbar.png') no-repeat 0 -19px;
+        width: 157px;
+        height: 33px;
+      }
+      .hot {
+        background-image: url('../image/13_/topbar.png');
+        background-repeat: no-repeat;
+        background-position: -192px 0;
+        width: 26px;
+        height: 13px;
+      }
+      i {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <i class="logo"></i>
+    <i class="hot"></i>
+  </body>
+</html>

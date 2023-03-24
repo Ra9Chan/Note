@@ -1,5 +1,7 @@
 @font-face {
   font-family: 'ShuHeiTi';
   src: url(../fonts/Alimama_ShuHeiTi_Bold.ttf);
-  src: url(../fonts/Alimama_ShuHeiTi_Bold.woff) format('woff');
+  /* 兼容性写法 */
+  src: url(../fonts/Alimama_ShuHeiTi_Bold.woff2) format('woff2'),
+  url(../fonts/Alimama_ShuHeiTi_Bold.woff) format('woff');
 }

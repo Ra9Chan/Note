@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 默认值：auto, 浏览器根据上下文决定指针的显示样式，比如根据文本和非文本切换指针样式 */
+    .cursor01{
+      cursor: auto;
+    }
+    /* 由操作系统决定，一般就是一个小箭头 */
+    .cursor02{
+      cursor: default;
+    }
+    /* 一只小手，鼠标指针挪动到链接上面默认就是这个样式 */
+    .cursor03{
+      cursor: pointer;
+    }
+    /* 一条竖线，鼠标指针挪动到文本输入框上面默认就是这个样式 */
+    .cursor04{
+      cursor: text;
+    }
+    /* 没有任何指针显示在元素上面 */
+    .cursor05{
+      cursor: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <ul>
+      <li class="cursor01">我是LI元素</li>
+      <li class="cursor02">我是LI元素</li>
+      <li class="cursor03">我是LI元素</li>
+      <li class="cursor04">我是LI元素</li>
+      <li class="cursor05">我是LI元素</li>
+      <li>我是LI元素</li>
+      <li>我是LI元素</li>
+    </ul>
+  </div>
+</body>
+</html>

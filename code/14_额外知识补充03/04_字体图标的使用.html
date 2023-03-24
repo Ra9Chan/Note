@@ -14,10 +14,16 @@
       }
       .iconfont {
         font-family: 'iconfont' !important;
-        font-size: 16px;
+        font-size: 50px;
         font-style: normal;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+      }
+      .mail::before {
+        content: '\e99e';
+      }
+      .icon-mail:before {
+        content: '\e99e';
       }
     </style>
   </head>
@@ -26,6 +32,7 @@
     <i class="iconfont">&#xe996;</i>
     <i class="iconfont">&#xe997;</i>
     <i class="iconfont">&#xe99d;</i>
-    <i class="iconfont">&#xe99e;</i>
+    <!-- 不使用字符实体展示出来 -->
+    <i class="iconfont icon-mail"></i>
   </body>
 </html>
