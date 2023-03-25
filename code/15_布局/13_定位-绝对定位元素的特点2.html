@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 800px;
+        height: 300px;
+        background-color: #f00;
+        position: relative;
+      }
+      .container {
+        height: 100px;
+        background-color: #0f0;
+        width: 200px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        /* left: 300px; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 绝对定位元素 -->
+    <!-- position：absolute/fixed -->
+    <!-- 定位参照对象的宽度 = left + right + margin-left + margin-right + 绝对定位元素的实际占用宽度 -->
+    <!-- 定位参照对象的高度 = top + bottom + margin-top + margin-bottom + 绝对定位元素的实际占用高度 -->
+    <!-- 例子 父元素宽度 = left + right +margin-left + margin-right + content.width -->
+    <!-- 垂直居中： margin：0 ；left，right，top， bottom：0；容器需要设置宽度 -->
+    <div class="box">
+      <div class="container"></div>
+    </div>
+  </body>
+</html>
