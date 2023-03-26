@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 800px;
+        height: 800px;
+        background-color: #f00;
+        position: relative;
+      }
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: #0f0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 150px;
+        height: 40px;
+        
+        background-color: #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 绝对定位元素 -->
+    <!-- position：absolute/fixed -->
+    <!-- 1.可以随意设置宽高 -->
+    <!-- 2.宽高默认由内容决定，包裹内容 -->
+    <!-- 3.不再受到标准流的约束 -->
+    <!-- 不再严格按照由上到下，由左到右排布
+    不再严格区分 块级元素 行内元素 行内块级元素， 很多特性会消失 -->
+    <!-- 4.不再给父元素汇报宽高，如果父元素没有设置宽高，会导致父元素塌陷 -->
+    <!-- 5. 脱标元素内部默认还是按照标准流排布 -->
+    <div class="container">
+      <div class="box">
+        <span>我是span元素</span>
+        <strong class="text">我是strong元素</strong>
+        <img src="../image/0-12/jdlogo.png"></img>
+        <div>我是div元素</div>
+        <button class="top">Top</button>
+      </div>
+    </div>
+  </body>
+</html>
