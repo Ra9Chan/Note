@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <title>Document</title>
+
+    <style>
+      body{
+        font: 16px "ShuHeiTi";
+      }
+      .cover {
+        display: inline-block;
+        position: relative;
+        width: 140px;
+        height: 140px;
+        margin: 20px;
+      }
+      .glass {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .bg {
+        background: url(../image/13_/images/musicsprite_01.png) no-repeat;
+        width: 140px;
+        height: 140px;
+      }
+      .bottom {
+        position: absolute;
+        width: 140px;
+        height: 27px;
+        background: url('../image/13_/images/musicsprite_01.png') no-repeat 0 -537px;
+
+        box-sizing: border-box;
+        bottom: 0px;
+        padding: 0 8px;
+      }
+      .bottom span,
+      .bottom a {
+        display: inline-block;
+        color: #eee;
+        font-size: 13px;
+        line-height: 27px;
+      }
+
+      .bottom .icon-headset {
+        background: url('../image/13_/images/iconall.png') no-repeat 0 -24px;
+        width: 14px;
+        height: 11px;
+      }
+      .bottom .icon-play {
+        background: url('../image/13_/images/iconall.png') no-repeat 0 0;
+        width: 16px;
+        height: 17px;
+
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+      }
+      .decoration {
+        font-size: 14px;
+        margin: 5px auto;
+        /* overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cover">
+      <img src="../image/13_/images/109951163452086313.jpg" alt="" />
+      <a href="" class="glass bg"></a>
+      <div class="bottom">
+        <a class="icon-play" href="#"></a>
+        <span class="icon-headset"></span>
+        <span class="nb">2838万</span>
+      </div>
+      <p class="decoration">助眠辑 | 自然音，伴灵动乐符萦绕耳畔</p>
+    </div>
+    <div class="cover">
+      <img src="../image/13_/images/18519074348678474.jpg" alt="" />
+      <a href="" class="glass bg"></a>
+      <div class="bottom">
+        <a class="icon-play" href="#"></a>
+        <span class="icon-headset"></span>
+        <span class="nb">4749万</span>
+      </div>
+      <p class="decoration">无前奏丨欧美女声丨三秒爱上</p>
+    </div>
+  </body>
+</html>
