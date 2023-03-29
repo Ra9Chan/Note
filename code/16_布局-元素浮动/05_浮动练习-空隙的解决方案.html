@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <style>
+    .box{
+
+    }
+
+    /* 将多个行内级元素中间的空格（间隙）去除的方法 
+    原理：多个行内级的元素中间有间隙是因为元素在代码中的换行符和空格影响，之间的间隙取决于字体的大小
+    1. 删除换行符（不推荐） 
+    2. 将父级元素的font-size设置为0，但是需要子元素设置回来
+    3. 通过子元素向一个方向浮动
+    4. flex布局 */
+    span {
+      background-color: #3e3;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <span>001</span>
+    <span>002</span>
+    <span>003</span>
+  </div>
+</body>
+
+</html>
