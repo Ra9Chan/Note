@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      display: flex;
+      background-color: orange;
+      
+    }
+
+    .item {
+      width: 120px;
+      height: 120px;
+      max-width: 150px;
+    }
+    .item2{
+      /* flex-grow 决定了 flex items 如何扩展(拉伸/成长), 默认值是 0, 可以设置任意非负数字（正小数、正整数、0）*/
+      /* 当 flex container 在 main axis 方向上有剩余 size 时，flex-grow 属性才会有效 */
+      /* 如果所有 flex items 的 flex-grow 总和 sum 超过 1，每个 flex item 扩展的 size 为 
+      flex container 的剩余 size * flex-grow / sum */
+      flex-grow: 1;
+      /* flex items 扩展后的最终 size 不能超过 max-width\max-height */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+
+  </div>
+  <script src="./js/itemRandomColor.js"></script>
+</body>
+
+</html>

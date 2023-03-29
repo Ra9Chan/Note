@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .container {
+      width: 200px;
+      height: 500px;
+      display: flex;
+      background-color: orange;
+      
+    }
+
+    .item {
+      width: 120px;
+      height: 120px;
+      max-width: 150px;
+    }
+    .item2{
+      /* flex-grow 决定了 flex items 如何收缩(缩小), 默认值是 1, 可以设置任意非负数字（正小数、正整数、0）*/
+      /* flex items 在 main axis 方向上超过了 flex container 的 size，flex-shrink 属性才会有效 */
+      /* 如果所有 flex items 的 flex-shrink 总和 sum 超过 1，每个 flex item 收缩的 size为 
+      flex container 的剩余 size * flex-grow / sum */
+      flex-shrink: 0;
+      /* flex items 收缩后的最终 size 不能小于 min-width\min-height */
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+
+  </div>
+  <script src="./js/itemRandomColor.js"></script>
+</body>
+
+</html>
