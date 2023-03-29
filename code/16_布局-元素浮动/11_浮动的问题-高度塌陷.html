@@ -74,12 +74,22 @@
       float: left;
       margin-right: 5px;
     }
-    .other{
+
+    .other {
       height: 100px;
       background-color: #0f0;
     }
+
     /* 清除浮动,解决高度塌陷 */
-    .clear_fix::after{
+    /* 第一种给父元素设置固定宽度 */
+    /* clear指定某一个元素是否必须移动(清除浮动后)到它之前的浮动元素下面 */
+    /* 第二种 在父元素底部添加一个空的块级清除浮动子元素*/
+    .clear {
+      clear: both;
+    }
+
+    /* 第三种 通过给父元素添加伪元素清除浮动 */
+    .clear_fix::after {
       content: '';
       display: block;
       clear: both;
@@ -172,9 +182,87 @@
           <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
         </div>
       </div>
+      <div class="clear"></div>
     </div>
   </div>
-  <div class="other"></div>
+  <div class="box clear_fix">
+    <div class="wrap">
+
+      <div class="item_little">
+        <a class="item_title" href="#">
+          <span class="item_title_keyword">企业好店</span>企业用户都在逛
+        </a>
+        <div class="item_little_imgs ">
+          <img src="../image/13_/images/jd03.png!cc_290x370.avif" alt="">
+          <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
+        </div>
+      </div>
+      <div class="item_little">
+        <a class="item_title" href="#">
+          <span class="item_title_keyword">企业好店</span>企业用户都在逛
+        </a>
+        <div class="item_little_imgs ">
+          <img src="../image/13_/images/jd03.png!cc_290x370.avif" alt="">
+          <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
+        </div>
+      </div>
+      <div class="item_little">
+        <a class="item_title" href="#">
+          <span class="item_title_keyword">企业好店</span>企业用户都在逛
+        </a>
+        <div class="item_little_imgs ">
+          <img src="../image/13_/images/jd03.png!cc_290x370.avif" alt="">
+          <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
+        </div>
+      </div>
+      <div class="item_little">
+        <a class="item_title" href="#">
+          <span class="item_title_keyword">企业好店</span>企业用户都在逛
+        </a>
+        <div class="item_little_imgs ">
+          <img src="../image/13_/images/jd03.png!cc_290x370.avif" alt="">
+          <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
+        </div>
+      </div>
+      <div class="item_little">
+        <a class="item_title" href="#">
+          <span class="item_title_keyword">企业好店</span>企业用户都在逛
+        </a>
+        <div class="item_little_imgs ">
+          <img src="../image/13_/images/jd03.png!cc_290x370.avif" alt="">
+          <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
+        </div>
+      </div>
+      <div class="item_little">
+        <a class="item_title" href="#">
+          <span class="item_title_keyword">企业好店</span>企业用户都在逛
+        </a>
+        <div class="item_little_imgs ">
+          <img src="../image/13_/images/jd03.png!cc_290x370.avif" alt="">
+          <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
+        </div>
+      </div>
+      <div class="item_little">
+        <a class="item_title" href="#">
+          <span class="item_title_keyword">企业好店</span>企业用户都在逛
+        </a>
+        <div class="item_little_imgs ">
+          <img src="../image/13_/images/jd03.png!cc_290x370.avif" alt="">
+          <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
+        </div>
+      </div>
+      <div class="item_little">
+        <a class="item_title" href="#">
+          <span class="item_title_keyword">企业好店</span>企业用户都在逛
+        </a>
+        <div class="item_little_imgs ">
+          <img src="../image/13_/images/jd03.png!cc_290x370.avif" alt="">
+          <img src="../image/13_/images/jd04.png!cc_290x370.avif" alt="">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 </body>
 
 </html>
