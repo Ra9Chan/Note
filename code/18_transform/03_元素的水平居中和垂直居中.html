@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      height: 300px;
+      background-color: #aaa;
+
+    }
+
+    .box {
+      display: inline-block;
+      height: 100px;
+      background-color: #0f0;
+      position: relative;
+      /* margin-top相对的是父元素(包含块)的宽度 */
+      /* margin-top: 50%; */
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">卡死了都快拉倒了</div>
+    bbb
+  </div>
+  <!-- 水平居中: -->
+  <!-- 
+    1.行内级元素
+      在父元素设置 => text-align:center
+    2.块级元素
+      设置当前块级元素(需要加上宽度) => margin:0 auto
+    3.绝对定位
+      元素有宽度的情况下,设置当前元素 => left:0 / right:0 / margin:0 auto
+    4.flex布局
+      设置flex-container => justify-content:center
+  -->
+
+  <!-- 垂直居中: -->
+  <!--
+    1.绝对定位
+      父元素和自身元素都有高度的情况下,设置当前元素 => top:0 / botton:0 / margin:auto 0
+    弊端:
+      1.必须使用绝对定位(会脱离标准流)
+      2.必须给元素设置固定宽度(不然会自动占满整列)
+  -->
+
+  <!--
+    2.flex布局
+      在flex-container中设置 => align-item:center
+    弊端:
+      1.会导致flex-container里的所有元素都垂直居中
+      2.相对来说,兼容性不强
+  -->
+
+  <!-- 3.top/translate
+      设置相对定位,利用top:50%,先向下平移父元素宽度的50%,
+      再通过transform: translateY(-50%),向上平移元素本身宽度的50%,实现垂直居中
+  -->
+
+
+</body>
+
+</html>

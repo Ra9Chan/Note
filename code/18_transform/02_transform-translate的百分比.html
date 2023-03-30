@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: inline-block;
+      border: 5px solid #F00;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: #0f0;
+
+      /* 只能转换由盒模型定位的元素。根据经验，如果元素具有display: block，则由盒模型定位元素。 */
+      /* translate 翻译/平移(此处含义) */
+      /* translate( x , y )  
+      transform: translateX();
+      transform: translateY(); */
+      /* 百分比:百分比相对于谁 */
+      /* 不同地方的百分比相对参照物不同 */
+
+
+      /* translate的百分比是相对于自身 */
+      /* 如果设置的x位移， 参照的是自身的width */
+      /* 如果设置的y位移， 参照的是自身的height */
+      transform: translate(100%, 100%);
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box"></div>
+  </div>
+</body>
+
+</html>

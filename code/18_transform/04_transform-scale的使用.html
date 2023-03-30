@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      text-align: center;
+      padding-top: 200px;
+    }
+    .container {
+     
+      
+      display: inline-block;
+      border: 5px solid #F00;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #0f0;
+      /* scale 形变/比例 */
+      
+      /* 值 0-1 =>对元素进行缩小 */
+      /* 值  >1 =>对元素进行放大 */
+      transform: scale(.5,.5);
+    }
+    .box:hover{
+      transform: scale(1.1,1.1);
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box"></div>
+  </div>
+</body>
+
+</html>

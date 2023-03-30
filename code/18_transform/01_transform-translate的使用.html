@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .box{
-      width: 100px;
-      height: 100px;
-      background-color: #0f0;
-      /* 只能转换由盒模型定位的元素。根据经验，如果元素具有display: block，则由盒模型定位元素。 */
-      
+    .container {
+      display: inline-block;
+      border: 5px solid #F00;
     }
-    .box:hover{
-      transform: translate(5,1);
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #0f0;
+
+      /* 跟position定位有什么区别??? */
+      /* 只能转换由盒模型定位的元素。根据经验，如果元素具有display: block，则由盒模型定位元素。 */
+      /* translate 翻译/平移(此处含义) */
+      /* translate( x , y )  
+      transform: translateX();
+      transform: translateY(); */
+      transform: translate(100px, 50px);
+
     }
   </style>
 </head>
+
 <body>
-  <div class="box"></div>
+  <div class="container">
+    <div class="box"></div>
+  </div>
 </body>
+
 </html>
