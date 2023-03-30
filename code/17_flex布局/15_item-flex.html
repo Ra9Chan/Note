@@ -17,20 +17,19 @@
     }
 
     .item {
-      /* width: 120px; */
-      /* base size 和写死的width， 在一个长单词显示不完的情况下，可以拉伸长度，写死width则不可以 */
-      /* flex-basis 用来设置 flex items 在 main axis 方向上的 base size */
-      /* auto（默认值）、具体的宽度数值（100px） */
-      /* 决定 flex items 最终 base size 的因素，从优先级高到低 */
-      /* 1. max-width\max-height\min-width\min-height */
-      /* 2. flex-basis */
-      /* 3. width\height */
-      /* 4. 内容本身的 size */
-      flex-basis: 120px;
-      height: 120px;
-      max-width: 150px;
+      width: 120px;
+      /* flex-grow | flex-shrink | flex-basis | auto 的简写 */
+      /* 一个无单位值 代表 flex-grow | flex-shrink? */
+      /* 一个有效的宽度 代表 flex-basis */
+      /* 关键字： none (0,0,auto)
+      auto (1,1,auto)
+      inittal */
+      flex: auto;
     }
-    
+    .item2{
+      flex: none;
+      
+    }
   </style>
 </head>
 
