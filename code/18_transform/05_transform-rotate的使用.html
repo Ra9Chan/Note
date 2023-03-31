@@ -22,22 +22,25 @@
       width: 200px;
       height: 200px;
       background-color: #0f0;
-      /* scale 形变/比例 */
-      /* 默认值: 1  保持不变 */
-      /*        2  放大1倍 */
-      /*        .5 缩小1倍 */
-      /* 值 0-1 =>对元素进行缩小 */
-      /* 值  >1 =>对元素进行放大 */
-      transform: scale(1,1);
-    }
-    .box:hover{
-      transform: scale(1.2,1.2);
+      /* rotate 旋转 */
+      /* 正数代表顺时针旋转 */
+      /* 负数代表逆时针旋转 */
+      /* 常用单位:deg( degrees ) */
+      /* deg => 360度 */
+      /* grad => 400梯度 */
+      /* turn => 1圈 */
+      /* rad => 2π */
+      /* 直角顺时针: 90deg */
+      /* 直角逆时针: -90deg */
+      /* 零角: 0 */
+      /* 平角: 180deg */
+      transform: rotate(105deg);
     }
     .box1{
       width: 200px;
       height: 200px;
       background-color: #00f;
-      transform: scale(2,2);
+      transform: rotate(140deg);
     }
     
   </style>
