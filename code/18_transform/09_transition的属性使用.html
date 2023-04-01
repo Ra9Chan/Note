@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: #333;
+    }
+
+    .box {
+
+      position: relative;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background-color: #0f0;
+      /* 告知浏览器,在box进行一系列CSS属性变化的时候有一个过渡效果 */
+      /* transition-property: left; */
+      /* transition-property: all; */
+      transition-property: transform, left;
+      /* 哪一个属性需要过渡动画 */
+      transition-duration: 1s;
+      /* 动画持续时间*/
+      transition-timing-function: ease-in;
+      /* 动画执行曲线(例如先快后慢或者先慢后快)*/
+      transition-delay: 1s;
+      /* 延迟时间*/
+      /* transition简写 */
+      /* transition: all 1s ease-in 1s; */
+    }
+
+    .container:hover .box {
+      left: 100px;
+      transform: translate(100px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+    </div>
+  </div>
+</body>
+
+</html>
