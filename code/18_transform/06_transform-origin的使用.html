@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body{
+    body {
       text-align: center;
       padding-top: 200px;
     }
+
     .container {
-     
-      
+
+
       display: inline-block;
       border: 5px solid #F00;
     }
@@ -22,17 +23,17 @@
       width: 200px;
       height: 200px;
       background-color: #0f0;
-      transform-origin: top left;
+      /* origin 原点 */
+      /* 默认transform-origin: center center */
+      /* transform-origin: center top; */
+      /* 可以设置百分比，数值，和关键字 */
+      transform-origin: 30px 30px;
+      
+    }
+
+    .box:hover {
       transform: rotate(45deg);
     }
-    .box1{
-      width: 200px;
-      height: 200px;
-      background-color: #00f;
-      transform-origin: top right;
-      transform: rotate(45deg);
-    }
-    
   </style>
 </head>
 
@@ -40,9 +41,7 @@
   <div class="container">
     <div class="box"></div>
   </div>
-  <div class="container">
-    <div class="box1"></div>
-  </div>
+
 </body>
 
 </html>

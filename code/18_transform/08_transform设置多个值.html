@@ -1,47 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body {
+    body{
       text-align: center;
       padding-top: 200px;
     }
-
-    .container {
-
-
+    .box{
       display: inline-block;
-      border: 5px solid #F00;
-    }
-
-    .box {
       width: 200px;
       height: 100px;
-      background-color: #0f0;
-      transform-origin: top left;
-
+      background-color: orange;
     }
-
-    .box:hover {
-
-      transform: skew(10deg, 10deg);
-      /* skew 倾斜 */
-      /* 定义了一个元素在二维平面上的倾斜 */
-
+    .box:hover{
+      /* 通过空格分隔多个属性，不是用属性 */
+      transform: scaleX(2) rotate(45deg);
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="box">我是DIV元素</div>
-  </div>
-
+  <div class="box"></div>
 </body>
-
 </html>
