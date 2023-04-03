@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* RESET  */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* GLOBAL */
+body {}
+
+/* USER   */
+
+.container {
+  width: 100%;
+  max-width: 2560px;
+  
+}
+
+.container .topbar {
+  display: flex;
+  height: 65px;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .topbar .logo{
+  width: 34px;
+  height: 34px;
+}
+.container .topbar .active a, 
+.container .topbar a:hover{
+  color: #ff6900;
+}
+.container .topbar .topbar-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .topbar .topbar-list a {
+  margin: 0 20px;
+}
