@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    /* reset */
+    a {
+      text-decoration: none;
+      color: #999;
+    }
+
+    /* global */
+    .ell {
+
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 230px;
+    }
+
+    /* user */
+    .list-container {
+      background-color: #252331;
+      color: #b8b9c5;
+      margin: 0 auto;
+      width: 325px;
+      height: 342px;
+    }
+
+    .list-container .list-content {
+      margin: 0 15px;
+    }
+
+    .list-content .list-topbar {
+      display: flex;
+      border-bottom: 1px solid #000;
+    }
+
+    .list-content .list-topbar li {
+      width: 52px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 45px;
+      height: 45px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    .list-content .list-topbar li:hover {
+      color: #f3c258;
+      border-bottom: 5px solid #f3c258;
+    }
+
+    .list-content .list-decs {
+      margin-top: 18px;
+    }
+
+    .list-content .list-decs .line-oneli {
+      display: inline-block;
+      color: #f3c258;
+      background-color: #414046;
+      width: 100%;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .list-content .list-decs .line-oneli .ell {
+      display: inline-block;
+      padding: 8px 10px;
+    }
+
+    .list-decs li a{
+      display: flex;
+    }
+
+    .list-decs li a .little{
+      box-sizing: border-box;
+      font-size: 12px;
+      color: #4d9cff;
+      border: 1px solid #4d9cff;
+      border-radius: 2px;
+      padding: 0 3px;
+    }
+    .list-decs li a .ell{
+      font-size: 14px;
+    }
+    .list-decs li .date{
+      font-size: 12px;
+    }
+    /* .list .size {
+      padding: 0 5px;
+      box-sizing: border-box;
+    }
+
+    .list .ls-top {
+      display: flex;
+      text-align: center;
+      border-bottom: 1px solid #000;
+    }
+
+    .list .ls-top li {
+      width: 52px;
+      height: 45px;
+      font-size: 14px;
+      line-height: 45px;
+      box-sizing: border-box;
+      cursor: pointer;
+
+    }
+
+    .list .ls-top li:hover {
+      color: #f3c258;
+      border-bottom: 5px solid #f3c258;
+    }
+
+    .list .ls-content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .list .ls-content .line-sp {
+      font-size: 18px;
+      height: 36px;
+      line-height: 36px;
+      background-color: #414046;
+      padding: 0 15px;
+      color: #f3c258;
+    } */
+
+    /* .list .ls-content li {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .list .ls-content li a {
+      display: flex;
+      font-size: 14px;
+    }
+
+    .list .ls-content .ls-tittle {
+      width: 230px;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="list-container">
+    <div class="list-content">
+      <ul class="list-topbar">
+        <li>热门</li>
+        <li>新闻</li>
+        <li>公共</li>
+        <li>活动</li>
+        <li>赛事</li>
+        <li>...</li>
+      </ul>
+
+
+      <ul class="list-decs">
+        <li class="line-oneli">
+          <span class="ell">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</span>
+        </li>
+        <li>
+          <a href="#">
+            <span class="little">赛事</span>
+            <span class="ell">2023年王者荣耀甲级职业联赛（K甲）赛事规则</span>
+          </a>
+          <span class="date">02/02</span>
+        </li>
+        <!-- <li>
+          <a href=" #">
+              <span>赛事</span>
+              <span class="overflow">23KPL春季赛常规赛第一轮门票将于2月3日12：00开售！</span>
+          </a>
+          <span>02/02</span>
+        </li>
+        <li>
+          <a href="#">
+            <span>赛事</span>
+            <span class="overflow">2023年KPL王者荣耀职业联赛春季赛常规赛第一轮赛程</span>
+          </a>
+          <span>02/02</span>
+        </li>
+        <li>
+          <a href="#">
+            <span>赛事</span>
+            <span class="overflow">王者荣耀职业联赛（KPL）2023春季赛赛事规则</span>
+          </a>
+          <span>02/02</span>
+        </li>
+        <li>
+          <a href="#">
+            <span>赛事</span>
+            <span class="overflow">武汉eStar斩获第八冠 2022王者世冠KIC在深圳圆满收官</span>
+          </a>
+          <span>02/02</span>
+        </li>
+        <li>
+          <a href="#">
+            <span>赛事</span>
+            <span class="overflow">武汉eStarPro vs 佛山DRG.GK，谁将问鼎世冠总冠军？</span>
+          </a>
+          <span>02/02</span>
+        </li>
+        <li>
+          <a href="#">
+            <span>赛事</span>
+            <span class="overflow">王者世冠半决赛落幕：星辰耀世，雄狮觉醒，谁能捧得凤凰杯？</span>
+          </a>
+          <span>02/02</span>
+        </li> -->
+
+      </ul>
+
+    </div>
+</body>
+
+</html>
