@@ -131,3 +131,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+a {
+  text-decoration: none;
+  color: #333;
+}
